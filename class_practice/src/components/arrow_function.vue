@@ -31,4 +31,23 @@ y("vishu");
 
 let a= (user) => console.log("hello"+" "+user)
 a("luxmi");
+
+//only one argument then no need of ()
+
+let apple = user => console.log("hello" + " " + user)
+apple("sam");
+
+let q = {
+name : "kdjfkl",
+class:2,
+address: function (){
+    setTimeout(() =>{
+        console.log(this)
+        console.log("class is" + " "+ this.class)
+        
+    })
+}
+}
+
+q.address();
 </script>
