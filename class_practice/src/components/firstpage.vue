@@ -4,21 +4,23 @@
 
 <script>
 class RailwayForm{
+    constructor(givenname){
+        console.log("constructor is called")
+        this.name=givenname
+    }    
     submit(){
             alert(this.name+" "+"your form is submitted")
     }
     cancel(){
             alert(this.name+" "+"your form is  cancelled")
     }
-    fill(givenname){
-            this.name=givenname
-    }
+   
 }
 
-let x=new RailwayForm()
-x.fill("poonam")
-let y=new RailwayForm()
-y.fill("vishu")
+let x=new RailwayForm("Poonam")
+
+let y=new RailwayForm("Vishu")
+
 
 x.submit()
 y.cancel()
